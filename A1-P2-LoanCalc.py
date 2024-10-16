@@ -39,11 +39,12 @@ def main():
 
     weeklyInterest = float(interestRate) / 5200
 
+    # Weekly payment calculation
     weeklyPayment = (weeklyInterest / (1-math.pow((1+weeklyInterest),-52 * float(numberOfYears)))) * float(loanAmount)
 
    
 
-
+    # print statement for weekly payment with 2 decimal places
     print("Your weekly payment will be: ${0:.2f}".format(weeklyPayment))
 
 
